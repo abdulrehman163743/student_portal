@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type = "text/css" href="hover.css">
+  </head>
+
+  <body>
+    <h1>create teacher</h1>
+<form class='faculty-form' method="post" action="/faculty-register">
+    <label>name</label>
+    <input type="text" name="name" >
+    <br><br>
+
+    <label>address</label><br><br>
+    <textarea name="address" rows="5" cols="50"></textarea>
+    <br><br>
+
+    <label>contact number </label>
+    <input type="text" name="phone_num" >
+    <br><br>
+
+    <label>Designation</legal>
+    <select name='designation'>
+            <option>lecturer</option>
+            <option>instructor</option>
+            <option>professor</option>
+            <option>assistent professor</option>
+            <option>associate professor</option>
+            <option>head of department</option>
+            <option>director</option>
+    </select>
+<br><br>
+<br> <br>
+    <label>Department </label>
+    <select name="dept">
+        <% data.forEach(function(item){  %>
+            <option><%= item.dept_no %></option>
+        <% }) %>
+
+     <input type='submit' value="submit">
+<br><br>
+</form>
+  </body>
+</html>

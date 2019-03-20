@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type = "text/css" href="hover.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>create course</h1>
+    <form class='course-form' method="post" action="/course_add">
+    <label>course code</label>
+    <input type="text" name="course_code" >
+    <br><br>
+
+    <label>course name  :</label>
+    <input type="text" name="course_name" placeholder="coursename">
+    <br><br>
+
+    <label>type  :</label>
+    <select  name="type">
+      <option>Core</option>
+      <option>Elective</option>
+    </select>
+    <br><br>
+
+    <label>credit  :</label>
+    <input type="number" name="credit_hr" placeholder="enter credit hour" min="1" max="4">
+    <br><br>
+
+<div class="dropdown">
+      <button class="dropbtn">semester</button>
+          <div class="dropdown-content">
+              <ul>
+                  <li><a href="#">1st</a></li>
+                  <li><a href="#">2nd</a></li>
+                  <li><a href="#">3rd</a></li>
+                  <li><a href="#">4st</a></li>
+                  <li><a href="#">5nd</a></li>
+                  <li><a href="#">6rd</a></li>
+              </ul>
+        </div>
+</div>
+<br><br>
+
+<input type="submit" value="submit" id ="save"><br><br>
+</form>
+
+
+  </body>
+</html>
